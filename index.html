@@ -1,240 +1,224 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="Style.css">
-    <title>Titre de la page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page title</title>
 </head>
-<Style >
+<style>
+    html,body{
+        padding:0;
+        margin:0;
+        
+    }
+    main{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        background:#f2f2f2;
+    }
+     /* for 1st divs */
+    .lava{
+        border:1px solid #ddd;
+        text-align: center;
+        border-radius:15px;
+        width:85%;
+        height:200px;
+        background:#ddd;
+      font-size:20px;
+        font-weight:300;
+        box-shadow:0 2px 4px rgba(0,0,0,0.1);
+    }
+    header{
+       background:#f2f2f2;
+       text-align: center;
+       font-size:44px;
+       font-weight:300;
+       text-shadow:0 2px 4px rgba(0,0,0,0.1);
+       background-image:url('https://i.ibb.co/MkV9MHgc/IMG-20260111-WA0014.jpg');
+       width:100%;
+       height:200px;
+       
+    }
+    /*for long div*/
+    #long{
+        height:900px;
+        width:85%;
+        overflow-x: hidden;
+        overflow-y:auto;
+        scroll-snap-type:y mandatory;
+        background:#1c1c1e;
+        border-radius:10px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .in{
+        flex-shrink:0;
+        scroll-snap-align:start;
+        height:260px;
+        width:80%;
+        border:1px solid #ddd;
+        border-radius:10px;
+        color:white;
+        
+    }
+    /* for images of long div */
+    .ims{
+        width:100%;
+        height:200px;
+        border-radius:10px;
+    }
     
+    #about{
+        border:1px solid #ddd;
+        font-size:20px;
+        text-align: center;
+        font-weight:300;
+        background:#ddd;
+        box-shadow:0 2px 4px rgba(0,0,0,0.1);
+        width:80%;
+        border-radius:15px;
+        height:200px;
+    }
+    footer{
+        background:#1c1c1e;
+        text-align: center;
+        color: white;
+        height:300px;
+        width:100%;
+        
+    }
+    #btn{
+        width:75%;
+        text-align:center;
+        background: skyblue;
+        color:white;
+        border:5px solid skyblue;
+        border-radius:10px;
+        box-shadow:0 2px 4px rgba(0,0,0,0.1);
+    }
+    body{
+        background:#f2f2f2;
+    }
     
-</Style>
+    .act{
+        background: orange;
+        text-decoration:none;
+        color: white;
+        text-align: center;
+        width:75%;
+        text-shadow:0 2px 4px rgba(0,0,0,0.1);
+        border-radius:15px;
+    }
+    #btn1{
+        border:none;
+        color:skyblue;
+    }
+   
+</style>
 <body>
-    <header>
-    
-    
+    <header><br><b style="color:skyblue;">Ntalaja</b><b style="color: orange;">Business</b></header>
+    <main>
+        <br><br><br><br>
+        <!-- 1st -->
+        <div class="lava">
+            <br><br><br>
+         Il n'est pas trop tard pour faire le bon choix ! 
+            
+        </div><br><br>
+        <!-- 2nd -->
+        <div class="lava">
+            <br><br><br>
+            Avec NtalajaBusiness découvrez des surprises sur des maillots de qualité.
+        </div><br><br><br><hr style ="width:90%;"><br><br>
+        
+        <!-- long div -->
+        <h2 style="font-weight:300;">Nos maillot populaires</h2>
+        <br><br><br>
+        <div id="long">
+            <br>
+            <!-- 1st div -->
+            <div class="in"><img src="https://i.ibb.co/fz5Xq66H/IMG-20260111-WA0027.jpg" alt="" class="ims">Des maillots à votre choix <br>et de l'équipe vous<br> supportez.</div>
+            <!-- btn for price -->
+           <br> <a class="act" href="https://wa.me/243972427028">voir le prix</a>
+            <br><br><br>
+            <!-- 2nd div -->
+            <div class="in"><img src="https://i.ibb.co/Q3Y51JZP/IMG-20251215-WA0043.jpg" alt="" class="ims">Faites votre choix maintenant avec Real Madrid.</div><br><a class="act" href="https://wa.me/243972427028">voir le prix</a>
+            <br><br><br>
+            <!-- 3rd div -->
+            <div class="in"><img src="https://i.ibb.co/zVcwsBsG/IMG-20251215-WA0048.jpg" alt="" class="ims">Maillot de paris les plus populaire.</div><br><a class="act" href="https://wa.me/243972427028">voir le prix</a>
+            <br><br><br>
+            <!-- 4th div -->
+            <div class="in"><img style="" src="https://i.ibb.co/6RD7r1x0/IMG-20251216-WA0020.jpg" alt="" class="ims">Ne tardez pas,commandez à présent.</div><br><a class="act" href="https://wa.me/243972427028">voir le prix</a>
+            <br><br><br>
+            <!-- 5th div -->
+            <div class="in"><img src="https://i.ibb.co/SDxNRx85/IMG-20260118-140348-360.jpg" alt="" class="ims"></div><br><a class="act" href="https://wa.me/243972427028">voir le prix</a><br><br><br>
+            <!-- 6th div -->
+            <div class="in"><img src="https://i.ibb.co/jkYfS7wq/IMG-20260118-140228-127.jpg" alt="" class="ims"></div><br><a class="act" href="https://wa.me/243972427028">voir le prix</a><br><br><br>
+            <!-- 7th div -->
+            <div class="in"><img src="https://i.ibb.co/0wkqMmw/IMG-20260118-140325-216.jpg" alt="" class="ims"></div><br><a class="act" href="https://wa.me/243972427028">voir le prix</a>
+        </div><br><br><br><br>
+        
+        <button id="btn1" onclick="show()">Comment commander ses maillots? >  </button>
+        <p id="btn2" style="font-family:serif; font-weight:230;border:1px solid red; text-align:center; width:80%; border-radius:10px;"><br>pour commander vos articles, veuillez appuier sur "voir prix" pour vous tenir au courant des prix des maillots, baskets,...
+      <br> <br> </p>
+        
+        <br><br><hr style="width:90%;">
+        <h1 style="font-weight:280; font-size:30px;">En plus des maillots,NtalajaBusiness vous offre encore :</h1><br><br><br>
+        <!-- vidéos et tags-->
+        <!-- green div -->
+ <div style="display:flex; flex-direction:column; align-items:center;">
+    <div style="background:#cce3d4;width:88%;height:auto;border-radius:10px;box-shadow:0px 2px 4px rgba(0,0,0,0.1); border-right :3px solid skyblue;">
+        
+   <div style="display:flex; flex-direction:column; align-items:center;">    
+        <!-- 1st img for green div--><br><br><div style="color:#2e7d32;font-weight :250; display:flex;flex-direction:line;"><br><br><img class="com" src="https://i.ibb.co/5Xv2d34M/Screenshot-20251217-194504.jpg" alt="" style="width:65%; height:150px; border-radius:0;box-shadow:0px 2px 6px rgba(0,0,0,0.1);"><p class="com" style="text-align:end;font-size:20px;">Jordans montants</p></div><br><br><hr style="width:90%;"><br>
+    <!-- 2nd img for green div -->
+    <div style="color:#2e7d32;font-weight :250;display:flex;flex-direction:line;"><img class="com" src="https://i.ibb.co/3Vtbvvr/Screenshot-20251217-205017.jpg" alt="" style="width:65%; height:150px;box-shadow:0px 2px 6px rgba(0,0,0,0.1);"><p style="text-align:end;font-size:20px;">Disponibles<br>,en Franc(FC)<br> ou dol<br>-lars ($).</p></div><br><br>
+  <p style="font-size:12px;color:#2e7d32;"><i>Les chaussures vous sont livrés en cartons.La livraison se fait selon où vous vous trouvez</i></p>  </div></div>
         
         
-<div id="core">      <div id="lulu"><button style="border:none; background :white;font-size:25px; position :;" class="menu-btn" id="menuBtn"><b>☰</b></button>
-     
-    <h2 style=""><span style="color: orange ;text-shadow:0px 2px 4px rgba(0,0,0,0.1)">Ntalaja</span><span style="color:skyblue ;text-shadow:0px 2px 4px rgba(0,0,0,0.1)">business</span></h2></div>
- <div style="position :relative;bottom:23px;"><nav id="menu" style="width:200px; text-align:center; position :relative;right:30px;">
-    <br><br><br>
-  <a href="index.html">Accueil</a><br><br>
-  <a href="https://wa.me/243972427028"  >WhatsApp</a><br><br>
-  <a href="#" onclick="shareSite()">partager le site</a><br><br>
-  <a href="articles.html">Maillots</a><br><br>
-</nav>
-</div></div>
-
-    
-    
-    </header>
-
-    <main><br><br>
-    
-    
- 
-    
-  
-
-
-<br>
-    <br><br>
-    <br><br>
- <div style="border-bottom:1px solid orange; background :white;width:92%;height:50px;box-shadow:0 2px 4px rgba(0,0,0,0.1); text-align:center;">  <p id="rdv">Trouver des contenus associés sur <strong>NtalajaBusiness.</strong></p></div>
-    <br><br>
-    
- <!-- posé -->   
-    <div style="max-width:60px;height:45px;font-weight:200; width:100%;box-shadow: 0 2px 4px rgba(0,0,0,0.1);background :white;text-align: center;border-left:2px solid pink;">des maillots</div><div style="max-width:60px;height:45px;font-weight:200; width:100%;box-shadow: 0 2px 4px rgba(0,0,0,0.1);background :white;text-align: center;border-left:2px solid pink; position : relative ;top:3px;left:28px;">des baskets,...</div>
-    
-    
-    
-    
-    
-    <br><div class="section" id="service"><!-- div pour services --><br>
-    
-    
-    
-    
-<br><br><div><div style="display :flex;flex-direction:column;align-items:center;"><div id="je"><h1 style="">Il n'est pas trop tard pour faire le bon choix.</h1><p style="color:orange;"><strong>Faites le meilleur des choix avec nos articles.</strong></p></div>
-    
-   </div>
-    
-    <br><p>Découvrez maintenant notre <strong>best of <b id="yeary"></b></strong></p><br>
-    
-    
-    <h4 style="font-size:30px;color:green;font-family:serif; text-shadow:0 2px 4px rgba(0,0,0,0.1);"><i>Nos produits  commercialisés</i></h4>
-    <!-- big div -->
-    <div style="border-top:1px solid green;border-radius:10px;border-bottom:1px solid green;">
-    <br><br>
-    
-    
-    
-    
-    <div class="section" data-keys="maillot nba football jersey">
-  <div class="contain">
-     <!-- 1ère pic --> 
-      <div id="com">
-        <div> <div class="img"><img src="https://i.ibb.co/zVcwsBsG/IMG-20251215-WA0048.jpg" alt=""  style="width:100%;height:100%;border-radius:10px;"></div><br><p class="com">Des maillots à votre choix <br>et de l'équipe vous<br> supportez.</p></div><br><br>
-          <div class="img"><img src="https://i.ibb.co/Hf8RYvS7/IMG-20251215-WA0046.jpg" alt="" style="width:100%;height:100%;border-radius:10px;"><p class="com">Maillot de paris les plus populaire.</p></div>
-      </div>
-      <br><br><br><br><br>
-  <!-- 2ème -->   
-  <div id="come">
-   <div class="img" ><img src="https://i.ibb.co/Q3Y51JZP/IMG-20251215-WA0043.jpg" alt="" style="width:100%;height:100%;border-radius:10px;" ><p class="com">Faites votre choix maintenant avec Real Madrid.</p></div><br><br>
-          <div class="img"><img src="https://i.ibb.co/B5yfwC8B/IMG-20251216-WA0021.jpg" alt="" style="width:100%;height:100%;border-radius:10px;"><p class="com">Ne tardez pas,commandez à présent.</p></div>   
-  </div> 
-
-<br><br><br><br><br><p class="com"><i>Avec <strong>NtalajaBusiness</strong> vos articles préférés à des prix très abordables.</i></p><br>   
-      
-      
-    <br><br><br><br><button class="let" onclick="window.location.href='articles.html'">voir tous les articles</button><br><br><br><p style="border:1px solid green ; background :rgb(100,200,100);border-radius:10px;">sans frais de livraison</p>
-<br><br><br><br>
-      
-      
-  </div> <hr> </div>
-  <br><br><br><div style="display :flex;flex-direction:column;align-items:center;">
-  <p>Des chaussures de marques <strong>Jordan</strong> disponibles maintenant. 
-   <!-- 2,en boule --><!-- chaussures -->
-  <div class="section" data-keys="air jordan nike jordan basket">
-      
-  <div id="like">
-   <div class="imgb"><img src="https://i.ibb.co/8DBZt2Tg/Screenshot-20251217-194127.jpg" alt="" style="width:100%;height:100%;border-radius:10px;"></div>   
-      
-      <div class="imgb"><img src="https://i.ibb.co/svLgfbyX/Screenshot-20251217-194155.jpg" alt="" style="width:100%;height:100%;border-radius:10px;"></div>
-      </div>
-      <br><br><br></p><br><br><br><br>
-      <div id="luck">
-      
-      <div class="imgb"><img src="https://i.ibb.co/5Xv2d34M/Screenshot-20251217-194504.jpg" alt=""style="width:100%;height:100%;border-radius:10px;"></div>
-      
-      <div class="imgb"><img src="https://i.ibb.co/3Vtbvvr/Screenshot-20251217-205017.jpg" alt="" style="width:100%;height:100%;border-radius:10px;"></div>
-      
-  </div>
-<br><br><br>
-  
-  
-     
-      
-      
-      
-      
-  </div> 
- <br>
- <p>Nous avons aussi d'autres que vous aimez</p> <br>
- <p style="border:1px solid green ; background :rgb(100,200,100);border-radius:10px;">sans frais de livraison</p></div>
-  <!-- 3 -->
-  <div>
-      
- 
-  
-  
-  <hr>
-  <p style="font-family:serif;">Ce que nous pouvons réaliser avec vos articles achetés.</p>
- <div style="position:relative; width:100%; height:50px; padding-bottom:176.847%"><iframe  src="https://streamable.com/e/mf31ng?" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>
- 
- 
- 
-  
- 
-  <!-- end of big div  -->
-    <br><br><br></div><!-- div for section --></div><br><br>
-    
-  
-  
-  <div class="section" id="contact">
-  <div style="display:flex;flex-direction:column;align-items:center;">
-    
-<div style="border:1px solid #ddd;width:95%;height:auto;"><h3 style="color:green;font-size:35px; text-align:center;" >Contactez-nous</h3>
-<p>Pour avoir des précisions, détails sur les achats et articles contactez-nous directement sur WhatsApp :<br><br><br><div style=" width:80%;height:30px;box-shadow: 0 2px 4px #ddd;background :white;text-align:center;color: green ;border-right:8px solid green; "><a href="https://wa.me/243972427028" style="color:green;">Ntalajabusiess</a></div> <br> ou<br><br><br><img src="" alt="">
-<div style=" width:80%;height:30px;box-shadow: 0 2px 4px #ddd;background :white;text-align:center;color: green ;border-right:8px solid green;">+243 972 427 028</div> </p>
-    
- <br><br>Découvrez nos multiples services  
-    
-</div>
-<!-- end of div section contact --></div>      
-  <br><br> <br>
-  
-   <div style="display :flex;flex-direction:column;align-items:center;"   ><!-- div to arange not sections -->
-      
-      
-      
-      
-  
-    <br><br><br><br><a class="let"  href="https://wa.me/243972427028">Acheter auprès des locaux</a><br><br><br><br><br>
-    <!-- la boule -->
-    
-    <div style="width:130px;height:130px;clip-path:circle(50% at 50% 50%); background :white;border:1px solid white;box-shadow:0px 2px 4px rgba(0,0,0,0.1);text-align:center;"><span style="color: orange ;text-shadow:0px 2px 4px rgba(0,0,0,0.1); position :absolute;font-size:45px;">N</span><span style="color: skyblue ;font-size:35px;text-shadow:0px 2px 4px rgba(0,0,0,0.1); position :relative;left:16px;">b</span></div>
-  
-</div><!-- not section -->    
-
-    <br><br><br>
-    <div class="section" id="about">
-   <!-- about -->
-    <div style="border:1px solid #ddd; background :#ddd;height:auto;width:95%; text-align:center;border-radius:10px;"><h1 style="color:skyblue;">Qu'est-ce que <i>NtalajaBusiness</i></h1><p><i>NtalajaBusiness est un domaine de vente des articles de maillots, baskets,...<br>
-    De la famille <strong>Ntalaja...<br>
-    <a href="#">lire notre histoire</a></strong> </i></p></div> 
-    
-    
-
-    </div></div>    <!-- end of div section about --></div>
+        
+        
+        
+        <br><br><br><br><br><br>
+        <!-- about  -->
+        <div id="about"><br>À propos<br><br>Nous sommes un business familial de vente à votre service pour vous servir.<br></div><br><br><br>
+        <!-- btn share -->
+        <button id="btn" onclick="shareSite()">partager le site</button>
+        <br><br><br>
+        
     </main>
-   
-   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-   
-   
-   
-   
-   
-   
-
-<footer style="width:100%;height:240px; background :#ddd; text-align:center;"><br><br><br><br><br><p style="font-size:14px;">Created and designed by Léon BOTOLO <br>copyright ©<b id="year"></b></p><p style="font-size:14px; text-align:start;">Code editor: TrebEdit <br>Hosted by <strong>Github</strong></p><p style="font-size:14px; text-align:end; position :relative;bottom:30px;"><button onclick="shareSite()" type="search">Partager</button></p></footer>
+    <footer><br><br><br><br>
+  <p> copyright ©️<b id="moi"></b></p>
+  <a href="index.html" style="color: white;">Accueil</a><br><br>
+  web design by:<br><a href="tel:+243832151402" style="color: white;">Léon BOTOLO</a><br>
+  <p>Web development <br>and AI learning.</p>
+     
+    </footer>
 </body>
 <script>
-function shareSite() {
-  if (navigator.share) {
-    navigator.share({
-      title: document.title,
-      text: "Regarde ce site 👇",
-      url: window.location.href
-    });
-  } else {
-    alert("Le partage n'est pas supporté sur ce navigateur");
-  }
-}
-
-
-
-
-  document.getElementById("year").textContent = new Date().getFullYear();
-
-
-  document.getElementById("yeary").textContent = new Date().getFullYear();
-
-  
-  
-  
-  
-  
-          /* pour le menu*/
-          const menu = document.getElementById("menu");
-const btn = document.getElementById("menuBtn");
-
-btn.addEventListener("click", () => {
-  if (menu.style.maxHeight) {
-    menu.style.maxHeight = null; // Fermer
-  } else {
-    menu.style.maxHeight = menu.scrollHeight + "px"; // Ouvrir
-  }
-});
-
+    function shareSite(){
+        if (navigator.share){
+            navigator.share({
+                title:document.title,
+                text:"commander vos maillots à travers ce site",
+             url:window.location.href
+            })
+        }
+        else{
+            alert("Le partage n'est pas supporté sur ce navigateur ");
+        }
+    }
+    
+    document.getElementById("moi"). textContent=new Date().getFullYear();
+    
+    document.getElementById("btn2"). style.display="none";
+    
+    function show(){
+document.getElementById("btn2"). style.display="block";
+        
+        show();
+    }
 </script>
 </html>
-
-
-
-
-
-
